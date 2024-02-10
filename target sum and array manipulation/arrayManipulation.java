@@ -43,4 +43,25 @@ public class arrayManipulation {
         int secondLarge = findMax(arr);
         return secondLarge;
     }
+
+    //question 9
+    static int[] rotate(int[] arr, int k){
+        int n = arr.length;
+        k = k%n;
+        int[] ans = new int[n];
+        int j=0;
+        for (int i = n-k; i < n; i++) {
+            ans[j++] = arr[i];
+        }
+
+        for (int i = 0; i < n-k; i++) {
+            ans[j++]=arr[i];
+        }
+        return ans;
+    }
+    //without extra space
+    static int[] rotateArray(int[] arr){
+
+        return arr;
+    }
 }

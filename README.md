@@ -46,3 +46,7 @@ approach2:
 
 ## question 9
 rotate the given array by k steps(k can be greater than size of array)
+use k%n
+two parts: 0 to n-k and n-k to n
+approach 1: add elements using two loops in new array.
+approach2: reverse array parts individually then again reverse the whole array.
