@@ -40,4 +40,9 @@ a=a-b
 ## question 8
 reverse an array consisting of integer values.
 approach1:
-      using travese array reversely and add in second array
+      using traverse array reversely and add in second array
+approach2:
+      swaping the first and last element of array without using new array
+
+## question 9
+rotate the given array by k steps(k can be greater than size of array)
