@@ -50,3 +50,11 @@ use k%n
 two parts: 0 to n-k and n-k to n
 approach 1: add elements using two loops in new array.
 approach2: reverse array parts individually then again reverse the whole array.
+reverse(arr, 0,n-k-1)
+reverse(arr,n-k,n-1)
+reverse(arr,0,n-1)
+
+## question 10
+given q queries, check if the given element is present in the array or not;
+NOTE:
+value of all the elements in the array is less than 10 to the power 5
