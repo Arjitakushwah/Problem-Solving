@@ -58,3 +58,19 @@ reverse(arr,0,n-1)
 given q queries, check if the given element is present in the array or not;
 NOTE:
 value of all the elements in the array is less than 10 to the power 5
+
+# two pointer appraoch
+ ## question 11
+ sort an array consisting of only 0's and 1's
+ 1 step: for loop for count 0's in array
+ step 2: for loop to put 0's in array then 1's
+ approach 2:
+ using 2 pointer approach left and right, left keeps track of 0's and right keeps track of 1's
+
+ ## question 12
+ given an array of integers "a", move all the even integers at the beginning of the array followed by all the odd integers. the relative order of the odd or even integer does not matter. return any array that satisfies the condition.
+ 
+ approach will be same as the question 11
+
+ ## question 13
+ given an integer array sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.(also having negative numbers)
