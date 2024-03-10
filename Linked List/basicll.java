@@ -27,6 +27,16 @@ public class basicll {
             this.data=data;
         }
     }
+
+    //length of linked list
+    public static int llLength(Node head){
+        int count = 0;
+        while(head!=null){
+            count++ ;
+            head=head.next;
+        }
+        return count;
+    }
     public static void main(String[] args) {
         Node x =  new Node(5);
         Node y = new Node(4);
