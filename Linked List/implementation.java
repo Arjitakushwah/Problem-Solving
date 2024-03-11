@@ -35,8 +35,18 @@ public class implementation {
                 temp.next=head;
                 head=temp;
             }
-            
         }
+        //insert at particular index
+        void insertAt(int idx, int val){
+            Node t = new Node(val);
+            Node temp = head;
+            for (int i = 1 ; i <= idx-1; i++) {
+                temp=temp.next;
+            }
+            t.next = temp.next;
+            temp.next = t;
+        }
+           
         //display the linked list
         void display(){
             Node temp= head;
@@ -50,12 +60,36 @@ public class implementation {
         //length of linked list
         int size(){
             int count=0;
-            Node temp =head;
+            Node temp = head;
             while(temp!=null){
                 count++;
                 temp=temp.next;
             }
             return count;
+        }
+
+        //get element at index
+        int getElement(int idx){
+            Node temp = head;
+            for (int i = 1; i <= idx; i++) {
+                temp = temp.next;
+            }
+            return temp.data;
+        }
+
+        //delete at index method
+        void deleteElement(int idx){
+            if (idx==0){
+                head=head.next;
+            }
+            Node temp = head;
+            for (int i = 1; i <= idx-1; i++) {
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+            if (idx==size()) {
+                tail = temp;
+               } 
         }
     }
     public static void main(String[] args) {
@@ -65,6 +99,13 @@ public class implementation {
         ll.display();
         ll.insertAtBegin(43);
         ll.display();
+        ll.insertAt(2, 10);
+        ll.display();
+        ll.deleteElement(0);
+        ll.display();
+        System.out.println(ll.tail.data);
+        System.out.println(ll.head.data);
+        System.out.println(ll.size());
 
     }
 }
