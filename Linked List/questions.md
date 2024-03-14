@@ -21,7 +21,7 @@ https://leetcode.com/problems/intersection-of-two-linked-lists/
 ## --5--
 finding the middle element of linked list 
 naive approach--
-            find the length then find the mid again traverse to find the mind element
+            find the length then find the mid again traverse to find the mid element
 
 Slow and Fast pointer Approach--
             slow=slow.next
