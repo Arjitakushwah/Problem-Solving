@@ -13,3 +13,25 @@
  delete nth node from last
  similar slow flast approach
     https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+
+## --4--
+finding intersection of two linked list
+https://leetcode.com/problems/intersection-of-two-linked-lists/
+
+## --5--
+finding the middle element of linked list 
+naive approach--
+            find the length then find the mid again traverse to find the mind element
+
+Slow and Fast pointer Approach--
+            slow=slow.next
+            fast=fast.next.next (fast will run in 2x speed)
+
+            cases= odd length, even length(right middle, left middle)
+
+https://leetcode.com/problems/middle-of-the-linked-list/
+
+
+
+
+
