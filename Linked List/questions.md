@@ -11,7 +11,7 @@
 
 ## --3--
  delete nth node from last
- similar slow flast approach
+ similar slow fast approach
     https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
 ## --4--
@@ -26,7 +26,6 @@ naive approach--
 Slow and Fast pointer Approach--
             slow=slow.next
             fast=fast.next.next (fast will run in 2x speed)
-
             cases= odd length && even length(right middle || left middle)
 
 https://leetcode.com/problems/middle-of-the-linked-list/
