@@ -17,8 +17,17 @@ public class Deletion {
         //deletion at index n
         System.out.println("Enter the index");
         int n = sc.nextInt();
-        System.out.println("Enter the element");
-        int x = sc.nextInt();
 
+        Stack<Integer> rt = new Stack<>();
+        while(st.size()>n+1){
+            rt.push(st.pop());
+        }
+        st.pop();
+
+        while(rt.size()>0){
+            st.push(rt.pop());
+        }
+
+        System.out.println(st);
     }
 }

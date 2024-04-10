@@ -4,9 +4,15 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Insertion {
-
+    //using recursion to display elements in reverse order
     public static void displayRecursive(Stack<Integer> st){
-        
+        if(st.size()==0){
+            return;
+        }
+        int top=st.pop();
+        System.out.println(top +" ");
+        displayRecursive(st);
+        st.push(top);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,6 +22,9 @@ public class Insertion {
         st.push(43);
         st.push(65);
         st.push(98);
+
+        //display elements of stack in reverse order
+        displayRecursive(st);
 
         System.out.println(st);
         //insertion at index n

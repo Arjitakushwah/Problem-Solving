@@ -5,4 +5,7 @@ Copy stack --- copy content of one stack to another in same order
 Insert at bottom or insert at any index
 
 ## question 3
-Deletion
+Display reverse stack using recursion
+
+## question 4
+remove from bottom/or any index
