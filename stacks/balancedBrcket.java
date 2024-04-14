@@ -23,7 +23,7 @@ public class balancedBrcket {
         return true;
     }
     public static void main(String[] args) {
-        String str = "()(())(";
+        String str = "()(())(   `";
         boolean ans =balanced(str);
         System.out.println(ans);
     }
